@@ -1,0 +1,15 @@
+name: bs58check
+description: A starting point for Dart libraries or applications.
+# version: 1.0.0
+# homepage: https://www.example.com
+# author: andoan <email@example.com>
+
+environment:
+  sdk: '>=2.0.0-dev.58.0 <3.0.0'
+
+dependencies:
+  hex: ^0.1.2
+#  path: ^1.4.1
+
+dev_dependencies:
+  test: ^1.0.0
