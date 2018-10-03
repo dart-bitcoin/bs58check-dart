@@ -50,7 +50,6 @@ class Base {
     List<int> bytes = [0];
     for (var i = 0; i < string.length; i++) {
       var value = ALPHABET_MAP[string[i]];
-      print(value);
       if (value == null) {
         throw new ArgumentError('Non-base $BASE character');
       }

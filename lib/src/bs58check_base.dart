@@ -1,7 +1,6 @@
 import 'package:crypto/crypto.dart' show sha256, Digest;
 import 'dart:typed_data';
 import 'utils/base.dart';
-import 'dart:convert';
 final String ALPHABET = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz';
 final base58 = new Base(ALPHABET);
 
@@ -28,6 +27,16 @@ Uint8List decodeRaw(Uint8List buffer) {
     throw new ArgumentError("Invalid checksum");
   }
   return payload;
+}
+String getAddress(String inputString) {
+  if (inputString.length > 27) {
+    throw new ArgumentError("Can't create");
+  }
+  String string = '1' + inputString.padRight(33, 'i');
+  Uint8List buffer = base58.decode(string);
+  Uint8List payload = buffer.sublist(0, buffer.length - 4);
+  String address = encode(payload);
+  return address;
 }
 Uint8List decode(String string) {
   Uint8List buffer = base58.decode(string);
