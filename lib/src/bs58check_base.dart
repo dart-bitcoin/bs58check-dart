@@ -1,5 +1,6 @@
 import 'package:crypto/crypto.dart' show sha256, Digest;
 import 'dart:typed_data';
+import 'dart:math';
 import 'utils/base.dart';
 final String ALPHABET = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz';
 final base58 = new Base(ALPHABET);
@@ -32,7 +33,11 @@ String getAddress(String inputString) {
   if (inputString.length > 27) {
     throw new ArgumentError("Can't create");
   }
-  String string = '1' + inputString.padRight(33, 'i');
+  String string = '1' + inputString;
+  for(var i = inputString.length; i < 34; i++) {
+    final rng = Random.secure();
+    string += (ALPHABET)[rng.nextInt(58)];
+  }
   Uint8List buffer = base58.decode(string);
   Uint8List payload = buffer.sublist(0, buffer.length - 4);
   String address = encode(payload);

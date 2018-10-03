@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27740e34-0207-454e-9edc-8381965b91c6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/bs58check_example.dart" afterPath="$PROJECT_DIR$/example/bs58check_example.dart" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/bs58check_base.dart" afterPath="$PROJECT_DIR$/lib/src/bs58check_base.dart" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/utils/base.dart" afterPath="$PROJECT_DIR$/lib/src/utils/base.dart" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bs58check_base.dart" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bs58check_base.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/bs58check_base.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <state relative-caret-position="373">
+              <caret line="38" column="42" lean-forward="true" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
               <folding>
                 <element signature="e#0#56#0" expanded="true" />
               </folding>
@@ -64,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bs58check_example.dart" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bs58check_example.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/example/bs58check_example.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="57" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="57" />
+            <state relative-caret-position="135">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -105,9 +103,9 @@
         <option value="$PROJECT_DIR$/pubspec.yaml" />
         <option value="$PROJECT_DIR$/test/bs58check_test.dart" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/example/bs58check_example.dart" />
         <option value="$PROJECT_DIR$/lib/src/utils/base.dart" />
         <option value="$PROJECT_DIR$/lib/src/bs58check_base.dart" />
+        <option value="$PROJECT_DIR$/example/bs58check_example.dart" />
       </list>
     </option>
   </component>
@@ -341,12 +339,12 @@
       <workItem from="1538359183797" duration="437000" />
       <workItem from="1538445412602" duration="33000" />
       <workItem from="1538553995085" duration="2421000" />
-      <workItem from="1538557141109" duration="422000" />
+      <workItem from="1538557141109" duration="853000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14866000" />
+    <option name="totallyTimeSpent" value="15297000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -744,12 +742,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/bs58check_example.dart">
+    <entry file="file://$PROJECT_DIR$/lib/src/utils/base.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="57" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="57" />
+        <state relative-caret-position="168">
+          <caret line="52" column="21" lean-forward="false" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/bs58check_base.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="38" column="42" lean-forward="true" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
           <folding>
-            <element signature="e#0#55#0" expanded="true" />
+            <element signature="e#0#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -764,20 +770,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/utils/base.dart">
+    <entry file="file://$PROJECT_DIR$/example/bs58check_example.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="52" column="21" lean-forward="false" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/bs58check_base.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#0#56#0" expanded="true" />
+            <element signature="e#0#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
