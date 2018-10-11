@@ -1,9 +1,10 @@
-import 'package:bs58check/bs58check.dart' as bs58check;
+import '../lib/bs58check.dart' as bs58check;
+import 'dart:typed_data';
 import 'package:hex/hex.dart';
 main() {
-  var payload = HEX.decode('006b4689b16668e8ba5c29c208660b36201846b2ff');
-  var address = bs58check.encode(payload);
-  print(address);
-  print(HEX.encode(bs58check.decode(address)));
+  Uint8List decoded = bs58check.decode('5Kd3NBUAdUnhyzenEwVLy9pBKxSwXvE9FMPyR4UKZvpe6E3AgLr');
+  print(decoded);
+  print(HEX.encode(decoded));
+  print(bs58check.encode(decoded));
   print(bs58check.getAddress('AnDoan'));
 }

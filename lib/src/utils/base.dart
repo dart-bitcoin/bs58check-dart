@@ -45,13 +45,13 @@ class Base {
   }
   Uint8List decode(String string) {
     if (string.length == 0) {
-      throw new ArgumentError('Non-base $BASE character');
+      throw new ArgumentError('Non-base$BASE character');
     }
     List<int> bytes = [0];
     for (var i = 0; i < string.length; i++) {
       var value = ALPHABET_MAP[string[i]];
       if (value == null) {
-        throw new ArgumentError('Non-base $BASE character');
+        throw new ArgumentError('Non-base$BASE character');
       }
       var carry = value;
       for (var j = 0; j < bytes.length; ++j) {
@@ -71,12 +71,3 @@ class Base {
     return Uint8List.fromList(bytes.reversed.toList());
   }
 }
-
-//main() {
-//  var base = new Base('123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz');
-//  var bytes = HEX.decode('003c176e659bea0f29a3e9bf7880c112b1b31b4dc826268187');
-//  var address = base.encode(bytes);
-//  print(address);
-//  var enc = base.decode(address);
-//  print(HEX.encode(enc));
-//}
