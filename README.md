@@ -2,7 +2,7 @@
 
 A straight forward implementation of base58check extending upon bs58 for Flutter writing in Dart.
 
-Inspired by bitcoinjs-lib
+Inspired by [bitcoinjs](https://github.com/bitcoinjs/bs58check)
 
 ## Example
 
