@@ -9,7 +9,7 @@ environment:
 
 dependencies:
   hex: ^0.1.2
-  crypto: ^2.0.3
+  crypto: ^3.0.0
 #  path: ^1.4.1
 
 dev_dependencies:
