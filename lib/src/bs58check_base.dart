@@ -10,7 +10,7 @@ final base58 = new Base(ALPHABET);
 Uint8List _sha256x2(Uint8List buffer) {
   // SHA256(SHA256(buffer))
   Digest tmp = sha256.convert(buffer);
-  return sha256.convert(tmp.bytes).bytes;
+  return Uint8List.fromList(sha256.convert(tmp.bytes).bytes);
 }
 
 String encode(Uint8List payload) {
