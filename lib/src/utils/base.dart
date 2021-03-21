@@ -1,9 +1,9 @@
 import 'dart:typed_data';
 class Base {
-  String ALPHABET;
+  String? ALPHABET;
   Map<String, int> ALPHABET_MAP = new Map<String, int>();
-  int BASE;
-  String LEADER;
+  int? BASE;
+  String? LEADER;
 
   Base(String ALPHABET) {
     this.ALPHABET = ALPHABET;
@@ -23,23 +23,23 @@ class Base {
       var carry = source[i];
       for (var j = 0; j < digits.length; ++j) {
         carry += digits[j] << 8;
-        digits[j] = carry % BASE;
-        carry = carry ~/ BASE;
+        digits[j] = carry % BASE!;
+        carry = carry ~/ BASE!;
       }
       while (carry > 0) {
-        digits.add(carry % BASE);
-        carry = carry ~/ BASE;
+        digits.add(carry % BASE!);
+        carry = carry ~/ BASE!;
       }
     }
     var string = "";
 
     // deal with leading zeros
     for (var k = 0; source[k] == 0 && k < source.length - 1; ++k) {
-      string += LEADER;
+      string += LEADER!;
     }
       // convert digits to a string
     for (var q = digits.length - 1; q >= 0; --q) {
-      string += ALPHABET[digits[q]];
+      string += ALPHABET![digits[q]];
     }
     return string;
   }
@@ -55,7 +55,7 @@ class Base {
       }
       var carry = value;
       for (var j = 0; j < bytes.length; ++j) {
-        carry += bytes[j] * BASE;
+        carry += bytes[j] * BASE!;
         bytes[j] = carry & 0xff;
         carry >>= 8;
       }
