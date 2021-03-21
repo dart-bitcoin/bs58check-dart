@@ -2,7 +2,8 @@ import 'dart:typed_data';
 class Base {
   String? ALPHABET;
   Map<String, int> ALPHABET_MAP = new Map<String, int>();
-  int? BASE;
+  int? BASE; 
+  
   String? LEADER;
 
   Base(String ALPHABET) {
