@@ -1,3 +1,5 @@
+import 'dart:typed_data';
+
 import '../lib/bs58check.dart' as bs58check;
 import 'package:test/test.dart';
 import 'dart:io';
@@ -24,7 +26,7 @@ void main() {
   });
   (fixtures['valid'] as List<dynamic>).forEach((f) {
     test("encodes ${f['payload']}", () {
-      expect(bs58check.encode(HEX.decode(f['payload'])), f['string']);
+      expect(bs58check.encode(Uint8List.fromList(HEX.decode(f['payload']))), f['string']);
     });
   });
 }
